@@ -1,0 +1,18 @@
+@import "bootstrap/scss/bootstrap";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$gray: rgb(218, 214, 214);
+$light-gray: rgb(228, 227, 227);
+$blue: #337AB7;
+$deepblue: rgb(3, 98, 182);
+$lightyellow: #FFFFE1;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding:  10px;
+}
