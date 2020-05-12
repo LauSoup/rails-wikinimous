@@ -10,9 +10,11 @@
   </head>
 
   <body>
-
-    <%= link_to "Wikinimous", articles_path %>
-    <%= link_to "Create new article", articles_new_path %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to "Wikinimous", articles_path, class:"navbar-brand" %>
+      <%= link_to "Create new article", articles_new_path, class:"btn btn-outline-success my-2 my-sm-0"%>
+    
+    </nav>
 
     <%= yield %>
   </body>

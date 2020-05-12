@@ -1,11 +1,14 @@
 
 
 <div class="container">
-<h1><%= @article.title  %></h1>
+<h1>
+  <%= @article.title  %>
+  <%= link_to "🦄", article_update_path(@article) %>
+  <%= link_to "💣", article_path(@article), method: "delete", data: { confirm: "Are you sure? This is a masterpiece"} %>
+</h1>
+
 <hr>
 <p><%= @article.content %></p>
 
-<%= link_to "🖊", article_update_path(@article) %>
-<%= link_to "💣", article_path(@article), method: "delete", data: { confirm: "Are you sure? This is a masterpiece"} %>
 
 </div>
